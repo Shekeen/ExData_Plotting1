@@ -10,7 +10,7 @@
 #                 colClasses=c("character", "character", "numeric", "numeric", "numeric", "numeric", "numeric", "numeric", "numeric"))
 #unlink(tmpfile)
 
-data <- read.table("data/household_power_consumpiton.txt",
+data <- read.table("data/household_power_consumption.txt",
                    header=TRUE,
                    sep=";",
                    quote="",
@@ -28,5 +28,9 @@ lines(data_sample$DateTime, data_sample$Sub_metering_2,
       col="red")
 lines(data_sample$DateTime, data_sample$Sub_metering_3,
       col="blue")
-
+legend("topright",
+       c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"),
+       lty=c(1,1,1),
+       lwd=c(2,2,2),
+       col=c("black", "red", "blue"))
 

@@ -10,7 +10,7 @@
 #                 colClasses=c("character", "character", "numeric", "numeric", "numeric", "numeric", "numeric", "numeric", "numeric"))
 #unlink(tmpfile)
 
-data <- read.table("data/household_power_consumpiton.txt",
+data <- read.table("data/household_power_consumption.txt",
                    header=TRUE,
                    sep=";",
                    quote="",

@@ -3,3 +3,4 @@ data/
 *.Rproj.user
 *.Rhistory
 *.RData
+.Rproj.user
