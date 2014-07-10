@@ -55,3 +55,5 @@ plot(data_sample$DateTime, data_sample$Global_reactive_power,
      xlab="datetime",
      ylab="Global_reactive_power")
 
+dev.copy(png, "plot4.png", width=500, height=500)
+dev.off()

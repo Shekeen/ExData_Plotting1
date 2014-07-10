@@ -20,8 +20,12 @@ data_sample <- data[data$Date %in% c("1/2/2007", "2/2/2007"), ]
 data_sample$DateTime <- strptime(paste(data_sample$Date, data_sample$Time),
                                  format="%d/%m/%Y %H:%M:%S")
 
+Sys.setlocale(category="LC_ALL", locale="en_US.UTF-8")
+
 plot(data_sample$DateTime, data_sample$Global_active_power,
      type="l",
      xlab="",
      ylab="Global Active Power (kilowatts)")
 
+dev.copy(png, "plot2.png", width=500, height=500)
+dev.off()
